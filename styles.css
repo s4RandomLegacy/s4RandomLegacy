@@ -1,0 +1,146 @@
+:root{
+    --brightblue:#3cb9e1;
+    --limegreen:#4FCA14;
+    --simsblue:#0097EC;
+    --lightblue:#edf5f6;
+    --deepgreen:#208601;
+}
+
+body {
+    background-color: var(--lightblue);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1 {
+    color:white;
+    background-color: var(--limegreen);
+    margin: 0px;
+    padding: 5px;
+    padding-left:20px;
+}
+h2{
+    color:var(--simsblue);
+    border-bottom: 2px solid var(--brightblue);
+    background-color:white;
+    padding: 5px 20px;
+}
+h3{
+    color:var(--simsblue);
+    margin:0px;
+    padding:0px;
+}
+
+.header {
+    background-color: var(--simsblue);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+.topnav {
+    overflow: hidden;
+    background-color:white;position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}  
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--deepgreen);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}  
+.topnav a:hover {
+    background-color: var(--brightblue);
+    color: white;
+}
+
+.accordion{
+    cursor:pointer;
+    transition: 0.4s;
+}
+.panel{
+    display:none;
+    overflow:hidden;
+}
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2796";
+  }
+
+p {
+    text-indent: 10px;
+}
+a {
+    color:var(--deepgreen);
+    text-decoration: none;
+}
+
+ul { 
+    list-style-type: disc;
+}
+ul.nonbull{
+    list-style-type: none;
+}
+li {
+    text-indent: 0px;
+    list-style-position: inside;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+table{
+    width:95%;
+}
+th,td{
+    padding: 5px;
+    border-bottom: 1px solid var(--brightblue);
+    text-align:left;
+    vertical-align:top;
+}
+tr ul{
+    padding-bottom: 5px;
+}
+tr:hover {background-color:white;}
+
+.roll{
+    display: block;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--limegreen);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin:auto;
+}
+.rollbutton{
+    display:inline;
+    padding:100px;
+}
+.reroll{
+    display: block;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--limegreen);
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin:0px;
+}
+.tableroll{
+    width:68px;
+}
+.attr{
+    width:150px;
+}
