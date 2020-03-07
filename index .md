@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <title>Sims 4 Random Legacy</title>
-        <link rel="stylesheet" type="text/css" href="C:\Users\Maggie\Google Drive\Code\Personal\HTML_CSS_JavaScript\Random Legacy\styles.css" />
-        <script src="C:\Users\Maggie\Google Drive\Code\Personal\HTML_CSS_JavaScript\Random Legacy\script.js"></script>
+        <link rel="stylesheet" type="styles.css" />
+        <script src="script.js</script>
     </head>
     <body>
         <div class="header">Sims 4 Random Legacy Challenge</div>
