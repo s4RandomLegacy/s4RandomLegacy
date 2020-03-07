@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- This is the index/Home page. This should include a welcome and perhaps an explanation of how to use the website. It may also include the credits to the original creator and inspiration for this webpage SHRUG-->
+<!--  This page will probably be very script heavy, considering it's... basically only functional with them. There should be a tab that shows the filters that are taken into consideration when rolling. Also I want an Export button to save a text file with the full details of the currently rolled rules.-->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -10,27 +10,51 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="header">Sims 4 Random Legacy Challenge</div>
+        <div class="header">"Sims 4 Random Legacy Challenge"</div>
         <div class="topnav">
             <a href="index.html">Home</a>
             <a href="roll.html">Roll</a>
             <a href="rules.html">Rules</a>
         </div>
-
-        <h1>Changelog</h1>
-        <h2>3/7/2020</h2>
-        <p>Added extra rules courtesy of <a href="http://modthesims.info/showthread.php?t=628783">Skyegal19's forum post.</a></p>
-        <p>Began hosting on Github.</p>
-        <h2>3/6/2020</h2>
-        <p>Finished implementing show/hide functionality.</p>
-        <h2>3/5/2020</h2>
-        <p>Added the Roll table with most functionality.</p>
-        <p>Table layout ironed out.</p>
-        <p>Began implementing show/hide functionality.</p>
-        <h2>3/4/2020</h2>
-        <p>Created.</p>
-        <p>Rules copy-pasted from <a href="http://modthesims.info/t/534066">tigger89's forum post.</a></p>
-        <p>Initial colors and layout implemented.</p>
-          
+        <br>
+        <div class="rollButton"><button onclick="genAll()" type="button" class="roll">Roll!</button></div>
+        <br>
+        <table>
+            <tr>
+            <th></th>  
+            <th>Attribute</th>
+            <th>Result</th>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genMari()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Marital Status</td>
+                <td id="MariStat"></td>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genChild()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Children</td>
+                <td id="Child"></td>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genPrimCar()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Primary Career</td>
+                <td id="PrimCar"></td>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genSecCar()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Secondary Career(s)</td>
+                <td id="SecCar"</td>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genGoal()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Generational Goal</td>
+                <td id="GenGoal"></td>
+            </tr>
+            <tr>
+                <td class="tableroll"><button onclick="genMisc()" type="button" class="reroll">Re-roll</button></td>
+                <td class="attr">Miscellaneous Fun</td>
+                <td id="MiscFun"></td>
+            </tr>
+        </table>
     </body>
 </html>
