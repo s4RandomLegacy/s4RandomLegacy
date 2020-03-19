@@ -17,7 +17,7 @@ function genAll() {
 function genMari() {
     //Generate marital Status
     var MariStat = document.getElementById("MariStat")
-    var mariVal = genRand(1,marital.length)
+    var mariVal = Rand(1,marital.length);
     var SecCar = document.getElementById("SecCar")
     
     if(mariVal == 25){
