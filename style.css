@@ -9,6 +9,8 @@
 body {
     background-color: var(--lightblue);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:0px;
+    padding:0px;
 }
 h1 {
     color:white;
@@ -37,9 +39,17 @@ h3{
     font-weight: bold;
     padding: 20px;
 }
+.inner-body {   
+    max-width:750px;
+    margin: 0 auto;
+    border: 2px solid var(--limegreen);
+    border-top:none;
+    border-bottom:none;
+}
 .topnav {
     overflow: hidden;
-    background-color:white;position: -webkit-sticky;
+    background-color:white;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--limegreen);
@@ -78,7 +88,9 @@ h3{
   }
 
 p {
-    text-indent: 10px;
+    text-indent: 15px;
+    padding: 0px 10px 0px 10px;
+    line-height:25px;
 }
 a {
     color:var(--deepgreen);

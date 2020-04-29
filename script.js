@@ -86,7 +86,7 @@ function genMari() {
     
         SecCar.innerHTML = sec;
     } else{
-        SecCar.innerHTML = "HIDE ME";
+        SecCar.innerHTML = " None ";
     }
     
     MariStat.innerHTML = marital[mariVal-1];
@@ -117,7 +117,7 @@ function genPrimCar() {
                         + "<li>" + conCar[Rand(1,conCar.length)-1] + "</li></ul>";
     }
 }
-function genSecCar(){
+function genSecCar(mariVal){
     var SecCar = document.getElementById("SecCar")
     
     if(mariVal == 25){
@@ -186,7 +186,7 @@ function genSecCar(){
     
         SecCar.innerHTML = "<ul><li>" + sec + "</li><br>";
     } else{
-        SecCar.innerHTML = "HIDE ME";
+        SecCar.innerHTML = " This button doesn't actually work right now, sorry! You'll have to re-roll Marital Status, or re-roll the entire generation! :(";
     }
 }
 function genGoal() {
@@ -406,6 +406,3 @@ var unConCar = [
     "(IL)- Odd Jobs",
     "Part time jobs: 1-8"
 ]
-
-//////////////
-
